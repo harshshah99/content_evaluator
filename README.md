@@ -4,6 +4,9 @@ LLM powered content evaluator. Score Blogs and Emails on marketing specific metr
 ## Usage
 
 ```python
+import os
+os.environ['OPENAI_API_KEY'] = 'your-openai-key-here'
+
 from base_content import Content
 
 reference_details = "Product: VisionX Immersion VR Headset Display: Dual 4K OLED FOV: 200° Tracking: 6DOF inside-out Connectivity: WiFi 6, Bluetooth 5.2, USB-C"
