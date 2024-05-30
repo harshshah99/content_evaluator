@@ -1,0 +1,16 @@
+Category,metric,metric_description,requires_reference
+blog,Structure Score,"Measures how well actual output is organized, including the use of headings, paragraph length, and overall flow.",false
+blog,Keyword Usage,"Evaluates whether the actual output is aligned with the target keywords present in the input with these keywords being appropriately used in the title, meta descriptions, headings, and throughout the content.",true
+blog,Mobile Optimization,"Evaluates how well actual output performs on mobile devices, considering Google's mobile-first indexing.",false
+blog,Image Optimization,"Checks whether images have been optimized for the web (file size, format) and include alt text with relevant keywords.",false
+blog,Social Sharing Potential,"Assesses how shareable actual output is on social media platforms, including the presence of social sharing buttons.",false
+blog,Content Depth and Relevance,"Evaluates the length and comprehensiveness of actual output, ensuring it remains relevant and valuable to the reader.",false
+blog,Audience Engagement Potential,"Predicts how likely actual output is to engage readers, considering questions, calls-to-action, and interactive elements.",false
+email,"Subject Line ","Measures the effectiveness of the subject line in capturing the recipient's attention and generating interest. It should be concise, reflect the actual output's topic, and create a sense of urgency or interest",false
+email,Personalizability,"Evaluates the degree to which the actual output content is tailored to the recipient's interests, needs and his personal information. ",true
+email,Clarity of purpose,"Assesses how clearly the purpose of the actual output is stated upfront. The recipient should immediately understand what action is expected from them, such as generating leads, building links, or pitching a partnership.",false
+email,Value proposition,Measures the effectiveness of explaining how the recipient can benefit from the product or service offered. Providing specific examples of past successes can help establish credibility and avoid generic pitches.,false
+email,Conciseness,"Evaluates the clarity and brevity of the actual output content. Irrelevant details should be avoided, and the main point should be communicated quickly and effectively.",false
+email,Call-to-action,"Assesses the presence and clarity of a call-to-action within the actual output. A well-defined call-to-action makes it easy for the recipient to take the desired action, such as scheduling a call or making a purchase.",false
+email,Sender Information,"Evaluates the inclusion of a personalized signature in actual output that includes the sender's name, title, company, and relevant contact information. Adding social media links can further enhance engagement and encourage replies.",false
+email,Opt out option,Checks the presence of a clear and easy-to-use opt-out option in the actual output. Giving recipients the ability to unsubscribe from future actual outputs demonstrates respect for their preferences and supports compliance with actual output marketing regulations.,false
