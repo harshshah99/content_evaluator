@@ -59,7 +59,7 @@ class content_insights(BaseModel):
     
    
 prompt = ChatPromptTemplate.from_messages(
-    [("system", "You are an AI assistant with an expertise in SEO content. Follow the instructions to provide insights and details regarding the content input by the user"), 
+    [("system", "You are an AI assistant with an expertise in marketing content like emails, blogs, tweets and more. Follow the instructions to provide insights and details regarding the content input by the user"), 
      ("user", "Category: {category} \n Content : {content} \n\n Return the content insights for the above content")]
 )   
  
