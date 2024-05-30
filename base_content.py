@@ -12,7 +12,6 @@ class Content:
         self.content = generated_content
         self.reference_text = reference_text
         if content_type not in allowed_content_types:
-            
             raise TypeError(f"Invalid content type . Allowed content types are : {allowed_content_types}. Make sure {content_type} is present in category_metrics.csv with relevant metrics")
         
         self.content_type = content_type
@@ -62,7 +61,7 @@ class Content:
         return all_llm_metrics
     
     def get_content_insights(self):
-        """Get insights from llm like tone, """
+        """Get insights from llm like tone, topic and more"""
         content_insights = self.insights.invoke({'category':self.content_type,'content':self.content})
         
         return content_insights 
