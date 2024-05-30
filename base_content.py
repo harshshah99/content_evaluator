@@ -1,16 +1,25 @@
 from basic_metrics import metrics
 from llm_metrics import LLM_Metrics
 from llm_helper import insights_chain
+import pandas as pd
+
+df= pd.read_csv('category_metrics.csv')
+
+allowed_content_types = set(df.Category.values.tolist())
 
 class Content:
     def __init__(self, generated_content, reference_text, content_type, model='gpt-4o', **kwargs):
         self.content = generated_content
         self.reference_text = reference_text
+        if content_type not in allowed_content_types:
+            
+            raise TypeError(f"Invalid content type . Allowed content types are : {allowed_content_types}. Make sure {content_type} is present in category_metrics.csv with relevant metrics")
+        
         self.content_type = content_type
         
         if kwargs:
             self.reference_text = 'Core Information : \n' + reference_text + "\n___________________"
-            print('INFO : Additional Keywrod arguments passed. ALL keyword arguments will be appended to reference text')
+            print('INFO : Additional Keyword arguments passed. ALL keyword arguments will be appended to reference text')
             print('Avoid irrelevant keyword arguments. This will ensure more stable evaluation')
             for variable, value in kwargs.items():
                 self.reference_text += "\n " + variable + " : \n " + value + "\n___________________"
@@ -53,8 +62,8 @@ class Content:
         return all_llm_metrics
     
     def get_content_insights(self):
+        """Get insights from llm like tone, """
         content_insights = self.insights.invoke({'category':self.content_type,'content':self.content})
         
         return content_insights 
         
-
