@@ -35,7 +35,10 @@ class Content:
         
         stat_metrics = locals()
         
-        return {**stat_metrics}
+        #remove self from the list of local variables to get only the statistical metrics
+        del stat_metrics['self']
+        
+        return stat_metrics
 
     def get_llm_metrics(self):
         all_llm_metrics = {}
