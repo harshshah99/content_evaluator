@@ -1,4 +1,4 @@
 metric,metric_description,requires_reference
-Readability Score,"Measures how readable the actual ouput is. The easier the actual ouput is to read and understand, the better the readbility. Overly complex words, extra long or short sentences, and hard to understand structure should be penalised. IGNORE any factors other than readbility for this.",False
+Readability Score,"Measure how readable the actual ouput is. The easier the actual ouput is to read and understand, the better the readability. Overly complex words, extra long or short sentences, and hard to understand structure should be penalised. IGNORE any factors other than readbility for this.",False
 Factual Coverage,Measure how many details/information from the input are present in the actual output. Omission of details should be penalized. IGNORE any factors other than fact coverage for this.,True
 Cohesiveness,"Measure how cohesive the actual output is and how well it is sturctured. Whether the text within the actual output has a logical, consistent and coherent flow. IGNORE any factors other than cohesiveness for this.",False

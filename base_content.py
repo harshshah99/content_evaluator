@@ -21,7 +21,7 @@ class Content:
             print('INFO : Additional Keyword arguments passed. ALL keyword arguments will be appended to reference text')
             print('Avoid irrelevant keyword arguments. This will ensure more stable evaluation')
             for variable, value in kwargs.items():
-                self.reference_text += "\n " + variable + " : \n " + value + "\n___________________"
+                self.reference_text += "\n " + str(variable) + " : \n " + str(value) + "\n___________________"
         
         
         self.basic_metrics = metrics(self.content)
@@ -35,6 +35,7 @@ class Content:
         
         overall_sentiment = self.basic_metrics.sentiment_score()
         reading_ease = self.basic_metrics.reading_ease()
+        content_length = self.basic_metrics.content_length()
         word_count = self.basic_metrics.word_count()
         para_count = self.basic_metrics.paragraph_count()
         sent_count = self.basic_metrics.sentence_count()
